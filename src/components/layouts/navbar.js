@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
+import Headroom from 'react-headroom';
+import NavbarNav from './navbarNav';
+import { Link } from 'gatsby';
+
 
 
 export default class Navbar extends Component{
     render(){
         return(
-            <p className="teste">navibar</p>
+            <Headroom disableInlineStyles>
+                <div className="navbar__container">
+                
+                    <Link to="/" className="navbar__logo" activeClassName="navbar__logo--home">
+                        Interzone
+                    </Link>
+                    <NavbarNav />
+                </div>
+            </Headroom>
         );
     }
 }

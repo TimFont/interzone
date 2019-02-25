@@ -1,0 +1,84 @@
+.headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+    color:$color-white;
+    background-color:transparent;
+    padding: 2rem 0;
+    transition: all .5s ease-in-out, color 1s .5s;
+  }
+
+  .headroom-wrapper{
+    position:fixed;
+    width:100%;
+    z-index:2000;
+  }
+  .headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+  }
+  .headroom--scrolled {
+    background-color:$color-white;
+    border-bottom:1px solid $color-grey-one;
+    padding:1rem 0;
+
+    & .navbar__logo {
+      color:$color-black;
+    }
+
+    & .navbar__link {
+      color:$color-main-blue;
+    }
+    //height:10vh;
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
+  }
+  .headroom--pinned {
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 30px;
+    transform: translateY(0%);
+  }
+
+  .navbar {
+
+    &__container {
+      margin:0 auto;
+      width:90%;
+      height:100%;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    &__logo {
+      font-size:2rem;
+      font-weight: 700;
+      color:$color-white;
+
+      &--home{
+        color:$color-black;
+      }
+    }
+
+
+    &__list {
+      flex:0 0 40%;
+      display:flex;
+      justify-content: space-between;
+    }
+
+    &__li {
+      text-align:center;
+    }
+
+    &__link {
+      display:block;
+      padding:1rem 1.5rem;
+      font-size:1.7rem;
+      color:inherit;
+      transition:all .5s;
+
+    }
+  }

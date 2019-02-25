@@ -41,9 +41,6 @@ export default class Layout extends Component {
       }else{
         this.setState({isMobile: false});
       }
-
-      console.log(this.state.isMobile);
-  
   }
 
   render(){
@@ -60,11 +57,11 @@ export default class Layout extends Component {
         `}
         render={data => (
           <>
-            
-            <Navbar siteTitle={data.site.siteMetadata.title} />
-            {this.state.isMobile ? <MobileNav /> : ''}
+            {this.state.isMobile ? 
+              <MobileNav /> :
+              <Navbar />}
             <main>{this.props.children}</main>
-            <Footer />
+            <Footer currentPage={this.props.location} />
           </>
         )}
       />
