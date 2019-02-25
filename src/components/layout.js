@@ -3,10 +3,49 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Navbar from "../components/layouts/navbar"
+import MobileNav from "../components/layouts/mobileNav"
+import Footer from "./layouts/footer"
 import "../styles/main.scss"
 
 
 export default class Layout extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      isMobile:false
+    }
+
+    this.resizeEvt = this.resizeEvt.bind(this);
+
+  }
+
+  componentWillMount(){
+    if(window.innerWidth <= 600){
+      this.setState({ isMobile: true })
+    }
+  }
+
+  componentDidMount(){
+    window.addEventListener('resize', this.resizeEvt);
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('resize', this.resizeEvt);
+  }
+
+  resizeEvt(){
+      if(window.innerWidth <= 600){
+        this.setState({isMobile: true});
+      }else{
+        this.setState({isMobile: false});
+      }
+
+      console.log(this.state.isMobile);
+  
+  }
+
   render(){
     return(
         <StaticQuery
@@ -21,22 +60,11 @@ export default class Layout extends Component {
         `}
         render={data => (
           <>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <div
-              style={{
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `0px 1.0875rem 1.45rem`,
-                paddingTop: 0,
-              }}
-            >
-              <main>{this.props.children}</main>
-              <footer>
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
-              </footer>
-            </div>
+            
+            <Navbar siteTitle={data.site.siteMetadata.title} />
+            {this.state.isMobile ? <MobileNav /> : ''}
+            <main>{this.props.children}</main>
+            <Footer />
           </>
         )}
       />
