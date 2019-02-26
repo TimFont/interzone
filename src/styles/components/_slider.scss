@@ -1,0 +1,32 @@
+.homeSlider {
+    margin-top:-10%;
+    padding-left:5rem;
+    position:relative;
+
+    &__container{
+        height:30rem;
+    }
+
+    &__title{
+        font-size:2.7rem;
+        margin-bottom:3rem;
+    }
+
+    &__desc{
+        font-size:1.8rem;
+        font-weight: 400;
+        color:$color-grey-three;
+        line-height: 1.5;
+        margin-bottom:3rem;
+    }
+
+    &::before{
+        content:"";
+        position:absolute;
+        width:5px;
+        height:6rem;
+        background-color:$color-main-blue;
+        top:0;
+        left:0;
+    }
+}

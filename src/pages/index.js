@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import HomeLap from "../components/home/homeLap"
 import SEO from "../components/seo"
+import Slider from '../components/home/homeSlider';
 
 
 export default class IndexPage extends Component{
@@ -16,7 +17,7 @@ export default class IndexPage extends Component{
             <HomeLap />
           </div>
           <div className="home__content">
-            teste
+            <Slider />
           </div>
 
         </section>
