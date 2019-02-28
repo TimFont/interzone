@@ -7,13 +7,13 @@ const slides = [
         id:0
     },
     {
-        slideTitle: 'batata',
-        slideSubtitle: 'sdfsg',
+        slideTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        slideSubtitle: 'Sed eget porttitor lorem, id finibus odio. Aliquam erat volutpat. Donec purus diam, ultricies at facilisis',
         id:1
     },
     {
-        slideTitle: 'cenoura',
-        slideSubtitle: 'casd resultados',
+        slideTitle: 'Fusce luctus nunc arcu, ut tincidunt elit vehicula sit amet.',
+        slideSubtitle: ' facilisis. Fusce luctus nunc arcu, ut tincidunt elit vehicula',
         id:2
     }
 ];

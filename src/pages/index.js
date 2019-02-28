@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import HomeLap from "../components/home/homeLap"
 import SEO from "../components/seo"
 import Slider from '../components/home/homeSlider';
+import Social from '../components/social';
 
 
 export default class IndexPage extends Component{
@@ -18,6 +19,7 @@ export default class IndexPage extends Component{
           </div>
           <div className="home__content">
             <Slider />
+            <Social place="home" />
           </div>
 
         </section>

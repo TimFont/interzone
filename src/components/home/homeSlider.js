@@ -80,10 +80,12 @@ export default class Slider extends Component{
                 <div className="homeSlider__navigation">
                     {
                         slides.map( slide => (
-                            <button key={`selector ${slide.id}`} 
+                            <button key={`selector ${slide.id}`}
+                                    className={`homeSlider__selector 
+                                        ${this.state.currentSlide.id === slide.id ? 'homeSlider__selector--current' : ''}`} 
                                     onClick={this.buttonChange} 
                                     data-slide={slide.id}>
-                                    {`slide-${slide.id}`}
+                                    &nbsp;
                             </button>
                         ))
                     }

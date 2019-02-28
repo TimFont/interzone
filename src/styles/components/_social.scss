@@ -1,0 +1,26 @@
+.social{
+    display:flex;
+    align-items: center;
+    position: absolute;
+    width:13rem;
+    justify-content: space-between;
+    bottom:4rem;
+
+    &__icon-container {
+
+    }
+
+    &__link {
+        display:block;
+    }
+
+    &__icon {
+        height:2rem;
+        width:2rem;
+
+        &--home {
+            fill: $color-grey-three;
+        }
+
+    }   
+}

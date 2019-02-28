@@ -1,5 +1,4 @@
 .homeSlider {
-    margin-top:-10%;
     padding-left:5rem;
     position:relative;
 
@@ -27,6 +26,43 @@
         color:$color-grey-three;
         line-height: 1.5;
         margin-bottom:3rem;
+    }
+
+    &__selector {
+            height:2.7rem;
+            width:2.7rem;
+            background-color:transparent;
+            border:.4rem solid transparent;
+            border-radius:50%;
+            transition:all .5s;
+            position:relative;
+            cursor:pointer;
+
+        &--current {
+            border:.4rem solid rgba($color-main-blue, .7);
+        }
+
+        &::before {
+            content:"";
+            height:1.4rem;
+            width:1.4rem;
+            background-color:rgba($color-main-green, .7);
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            border-radius:50%;
+
+            
+        }
+
+        &:hover  &::before {
+            background-color:rgba($color-green-darker, .7);
+        }
+
+        &:focus{
+            outline: none;
+        }
     }
 
     &::before{
