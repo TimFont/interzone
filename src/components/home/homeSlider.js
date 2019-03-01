@@ -73,7 +73,7 @@ export default class Slider extends Component{
                         <div className="homeSlider__data">
                             <h1 className="homeSlider__title">{this.state.currentSlide.slideTitle}</h1>
                             <h3 className="homeSlider__desc">{this.state.currentSlide.slideSubtitle}</h3>
-                            <Link to="/sobre" className="btn">Mais info</Link>
+                            <Link to="/sobre" className="btn btn--pres">Mais info</Link>
                         </div>
                     </CSSTransition>
                 </TransitionGroup>

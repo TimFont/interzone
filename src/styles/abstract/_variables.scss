@@ -9,7 +9,8 @@ $color-grey-two:#C4C4C4;
 $color-grey-three:#838383;
 $color-black:#000000;
 
-$linear-gradient-main:linear-gradient(to right bottom, $color-main-green, $color-main-blue);
+$linear-gradient-main:linear-gradient(to right bottom, $color-main-blue, $color-main-green);
+$linear-gradient-invert:linear-gradient(to right bottom, $color-main-green, $color-main-blue);
 $box-shadow : rgba(0, 0, 0, 0.2) 0px 5px 30px;
 $box-shadow-two: rgba(0, 0, 0, 0.4) 0px 6px 26px;
 $box-shadow-three:  0px 15px 26px 0px rgba(0,0,0,0.33);

@@ -6,8 +6,20 @@
     justify-content: space-between;
     bottom:4rem;
 
-    &__icon-container {
+    @include respond(phone){
+        position:static;
+        justify-content: center;
+        width:auto;
+    }
 
+    &--home {
+        margin-top:5rem;
+    }
+
+    &__icon-container {
+        @include respond(phone){
+            margin:0 2rem;
+        }
     }
 
     &__link {
@@ -17,9 +29,14 @@
     &__icon {
         height:2rem;
         width:2rem;
+        transition:all .4s;
 
         &--home {
             fill: $color-grey-three;
+
+            &:hover {
+                fill:$color-main-blue;
+            }
         }
 
     }   

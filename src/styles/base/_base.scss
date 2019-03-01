@@ -44,4 +44,14 @@ body{
     &:active{
         outline: none;
     }
+
+    &--pres{
+        @include respond(phone){
+            background:$color-grey-two;
+            color:$color-main-blue;
+            font-size:1.5rem;
+            padding:1.4rem 3rem;
+            font-weight: 700;
+        }
+    }
 }

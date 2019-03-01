@@ -17,7 +17,7 @@ const socialItems = [
 ];
 
 const Social = ({ place }) => (
-    <div className="social">
+    <div className={`social ${place ? `social--${place}` : '' }`}>
         {
             socialItems.map(item => 
                 <div className="social__icon-container">

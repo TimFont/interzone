@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 
-import Header from "./header"
+
 import Navbar from "../components/layouts/navbar"
 import MobileNav from "../components/layouts/mobileNav"
 import Footer from "./layouts/footer"
@@ -58,6 +58,11 @@ export default class Layout extends Component {
         `}
         render={data => (
           <>
+           {this.state.isMobile ?
+
+              <Link to="/" className="mobile-logo">Interzone</Link> : ''
+          
+           }
             {this.state.isMobile ? 
               <MobileNav /> :
               <Navbar />}
