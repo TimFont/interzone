@@ -6,6 +6,7 @@ import HomeLap from "../components/home/homeLap"
 import SEO from "../components/seo"
 import Slider from '../components/home/homeSlider';
 import Social from '../components/social';
+import CardSection from '../components/home/cardSection';
 
 
 export default class IndexPage extends Component{
@@ -21,11 +22,8 @@ export default class IndexPage extends Component{
             <Slider />
             <Social place="home" />
           </div>
-
         </section>
-        <section style={{height:"100vh"}}>
-
-        </section>
+        <CardSection />
       </Layout>
     );
   }

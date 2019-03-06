@@ -97,11 +97,11 @@
             left:50%;
             transform:translate(-50%, -50%);
             border-radius:50%;
+            transition:all .5s;
 
-            
         }
 
-        &:hover  &::before {
+        &:hover::before {
             background-color:rgba($color-green-darker, .7);
         }
 
