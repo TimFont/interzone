@@ -1,9 +1,72 @@
-.card{
+.card {
+    flex:0 0 23%;
+    text-align:center;
+    background-color:$color-white;
+    padding:6rem 1.3rem;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    transition:transform .5s;
+    margin:1rem .25em;;
+
+    &:hover {
+        transform: translateY(-1.5rem) ;
+    }
+
+    @include respond(tab-land){
+        flex:0 0 calc(33.33% - 1rem);
+    }
+
+    @include respond(tab-port){
+        flex:0 0 calc(50% - 1rem);
+    }
+
+    @include respond(phone){
+        //margin:1rem;
+        flex:0 0 90%;
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+
     &__icon {
-        width:10rem;
+        width:13rem;
+        display:inline-block;
+        margin:0 auto;
+        margin-bottom:2rem;
+
+        &--devices,
+        &--config{
+            margin-left:2rem;
+        }
     }
 
     &__icon-bg {
         
+    }
+
+    &__title {
+        font-size:1.7rem;
+        color:$color-grey-three;
+        margin-bottom:3.5rem;
+        position: relative;
+
+        &::after {
+            display:block;
+            content:"";
+            position: absolute;
+            background-color:$color-main-green;
+            width:5rem;
+            height:.3rem;
+            bottom:-1.8rem;
+            left:50%;
+            transform:translateX(-50%);
+        }
+    }
+
+    &__desc {
+        font-size:1.3rem;
+        color:lighten($color-grey-three, 8%);
     }
 }

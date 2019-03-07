@@ -1,7 +1,6 @@
 import React from 'react';
-import Icon from '../elements/icon';
 import homeCards from '../../helpers/homeCards';
-import cardsSprite from '../../images/cardsSprite.svg';
+
 
 
 const CardSection = ({ }) => (
@@ -12,7 +11,7 @@ const CardSection = ({ }) => (
                 homeCards.map(card => (
                     <div className="card">
                         {/* <Icon className="card__icon" iconName={card.icon} altSprite={cardsSprite}/> */}
-                        <svg fill="none" className={`card__icon card__icon--${card.nameClass}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159 121">
+                        <svg fill="none" className={`card__icon card__icon--${card.nameClass}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169 131">
                             <path className={`card__icon-bg`} d={card.icon.bgPath} fill="#E1FFD2"></path>
                             <path className={`card__icon-path`} fill-rule="evenodd" clip-rule="evenodd" d={card.icon.iconPath} fill={`url(#${card.nameClass}-linear)`}></path>
                             <defs>
