@@ -1,0 +1,13 @@
+.card-grid {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    padding:10rem 0;
+
+
+    @include respond(phone){
+        justify-content: center;
+    }
+}

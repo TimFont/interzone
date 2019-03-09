@@ -1,12 +1,11 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import HomeLap from "../components/home/homeLap"
 import SEO from "../components/seo"
 import Slider from '../components/home/homeSlider';
 import Social from '../components/social';
-import CardSection from '../components/home/cardSection';
+import CardGrid from '../components/home/cardGrid';
 
 
 export default class IndexPage extends Component{
@@ -14,16 +13,24 @@ export default class IndexPage extends Component{
     return(
       <Layout location={this.props.location.pathname}>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <section className="home__intro">
-          <div className="home__laptop">
+        <section className="intro-section">
+          <div className="intro-section__laptop">
             <HomeLap />
           </div>
-          <div className="home__content">
+          <div className="intro-section__content">
             <Slider />
             <Social place="home" />
           </div>
         </section>
-        <CardSection />
+
+        <section className="card-section">
+          <div className="container-big">
+            <h1 className="section-title">Caracteristicas dos produtos:</h1>
+            <CardGrid />
+          </div>
+        </section>
+
+
       </Layout>
     );
   }

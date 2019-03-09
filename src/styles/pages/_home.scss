@@ -1,20 +1,17 @@
-.home {
-    &__intro{
-        height:100vh;
-        width:100%;
+//organize the sections of the homepage
+.intro-section{
+    height:100vh;
+    width:100%;
 
-        background: url('../images/home-bg.svg')top / 100% 100% no-repeat,
-                    url('../images/bg.png') right / cover no-repeat;
-        //background-size:100% 100%;
-        position:relative;
-        display:flex;
+    background: url('../images/home-bg.svg')top / 100% 100% no-repeat,
+                url('../images/bg.png') right / cover no-repeat;
+    position:relative;
+    display:flex;
 
-        @include respond(phone){
-            height:90vh;
-            background:$linear-gradient-main top / 100% 60%  no-repeat;
-        }
+    @include respond(phone){
+        height:90vh;
+        background:$linear-gradient-main top / 100% 60%  no-repeat;
     }
-
 
     &__laptop {
         position:absolute;
@@ -62,5 +59,8 @@
         }
         
     }
+}
 
+.card-section {
+    padding-top:10rem;
 }

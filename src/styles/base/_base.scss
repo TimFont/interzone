@@ -24,35 +24,4 @@ body{
     width:90%;
 }
 
-.btn {
-    background-image:$linear-gradient-main;
-    color:$color-white;
-    border:none;
-    font-family: inherit;
-    display:inline-block;
-    font-size: 1.7rem;
-    padding:1.6rem 4rem;
-    border-radius: 50px;
-    box-shadow: $box-shadow-two;
-    transition:all .5s;
-
-    &:hover{
-        transform:translateY(-4px);
-        box-shadow: $box-shadow-three;
-    }
-
-    &:active{
-        outline: none;
-    }
-
-    &--pres{
-        @include respond(phone){
-            background:$color-grey-two;
-            color:$color-main-blue;
-            font-size:1.5rem;
-            padding:1.4rem 3rem;
-            font-weight: 700;
-        }
-    }
-}
 
