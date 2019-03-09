@@ -64,3 +64,26 @@
 .card-section {
     padding-top:10rem;
 }
+
+.adv-section {
+    height: 80vh;
+    overflow: hidden;
+    background:url('../images/gradientDecor.svg') left / contain no-repeat;
+
+    &__content {
+        display:flex;
+        justify-content: space-between;
+        align-items: stretch;
+        height:100%;
+    }
+
+    &__left {
+        flex:1;
+        position:relative;
+    }
+
+    &__right {
+        flex:1;
+    }
+
+}
