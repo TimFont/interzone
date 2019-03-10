@@ -66,24 +66,54 @@
 }
 
 .adv-section {
-    height: 80vh;
+    //height: 90vh;
     overflow: hidden;
-    background:url('../images/gradientDecor.svg') left / contain no-repeat;
+    background:url('../images/gradientDecor.svg') left top / auto 90vh no-repeat;
+    padding:10rem 0;
+    margin-top:5rem;
+
+    @include respond(tab-land){
+        background-size:auto 80%;
+    }
 
     &__content {
         display:flex;
         justify-content: space-between;
         align-items: stretch;
-        height:100%;
+
+        @include respond(tab-port){
+            display: block;
+            position:relative;
+        }
     }
+
+
 
     &__left {
         flex:1;
-        position:relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include respond(tab-port){
+            display: inline-block;
+            position:absolute;
+            left:50%;
+            top:5vh;
+            width:70%;
+            height:30vh;
+            transform:translateX(-50%);
+        }
+
+        @include respond(phone){
+            width:90%;
+            top:5%;
+        }
     }
 
     &__right {
         flex:1;
+
     }
 
 }

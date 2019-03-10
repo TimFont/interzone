@@ -33,7 +33,7 @@ export default class IndexPage extends Component {
         </section>
 
         <section className="adv-section">
-          <div className="container-big" style={{height:'100vh'}}>
+          <div className="container-big">
             <div className="adv-section__content">
               <div className="adv-section__left">
                 <AdvIllu />
@@ -47,7 +47,7 @@ export default class IndexPage extends Component {
                       <li className="adv-content__item">- Lorem ipsum</li>
                       <li className="adv-content__item">- Lorem ipsum</li>
                     </ul>
-                    <Link className="btn">Entrar em contato</Link>
+                    <Link to="/contato" className="btn">Entrar em contato</Link>
                 </div>
               </div>
             </div>
