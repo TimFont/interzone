@@ -8,6 +8,7 @@ import Social from '../components/social';
 import CardGrid from '../components/home/cardGrid';
 import { Link } from "gatsby";
 import AdvIllu from "../components/home/advIllu";
+import JobGrid from "../components/home/jobGrid";
 
 
 export default class IndexPage extends Component {
@@ -51,6 +52,13 @@ export default class IndexPage extends Component {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="job-section">
+          <div className="container-big">
+            <h1 className="section-title">Ultimos trabalhos</h1>
+            <JobGrid />
           </div>
         </section>
 
