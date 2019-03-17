@@ -69,3 +69,23 @@ h1{
     font-size:2.2rem;
     text-align:center;
 }
+
+input:not([type="submit"]),
+textarea {
+    resize: none;
+    width:80%;
+    height:4.5rem;
+    font-family: inherit;
+    padding:1rem 2rem;
+    border:none;
+    box-shadow:$box-shadow;
+    margin:1rem 0;
+    position:relative;
+
+
+}
+
+textarea{
+    height:6rem;
+}
+

@@ -9,6 +9,7 @@ import CardGrid from '../components/home/cardGrid';
 import { Link } from "gatsby";
 import AdvIllu from "../components/home/advIllu";
 import JobGrid from "../components/home/jobGrid";
+import Contact from "../components/contact/contact";
 
 
 export default class IndexPage extends Component {
@@ -63,6 +64,10 @@ export default class IndexPage extends Component {
         </section>
 
 
+        <section className="contact-section">
+          <Contact />
+        </section>
+        
       </Layout>
     );
   }
