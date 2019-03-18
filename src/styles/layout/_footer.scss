@@ -1,0 +1,23 @@
+.footer{
+    position:relative;
+    background-color:$color-blue-two;
+    color:$color-white;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:4rem 0 6rem 0;
+
+    @include respond(tab-port){
+        padding:4rem 5rem 10rem 5rem;
+    }
+
+    a {
+        color:inherit;
+    }
+
+    &__info {
+        margin-top:2rem;
+    }
+}

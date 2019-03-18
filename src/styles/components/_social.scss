@@ -16,6 +16,10 @@
         margin-top:5rem;
     }
 
+    &--footer {
+        position:static;
+    }
+
     &__icon-container {
         @include respond(phone){
             margin:0 2rem;
@@ -37,6 +41,10 @@
             &:hover {
                 fill:$color-main-blue;
             }
+        }
+
+        &--footer {
+            fill:$color-white;
         }
 
     }   

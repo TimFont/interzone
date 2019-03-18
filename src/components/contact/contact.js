@@ -49,7 +49,7 @@ export default class Contact extends Component {
                             <div className="contact__form-group">
                                 <textarea value={this.state.message} onChange={this.handleChange} id="form-text" name="message" placeholder="Mensagem"></textarea>
                             </div>
-                            <input type="submit" className="btn" value="Enviar" />
+                            <input type="submit" className="btn contact__submit" value="Enviar" />
                             
                         </form>
                     </div>

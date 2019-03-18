@@ -123,3 +123,15 @@
     padding:6rem 0;
 }
 
+.contact-section {
+    background:url('../images/gradientWave.svg') left top / 100% auto no-repeat,
+                linear-gradient($color-blue-two, $color-blue-two) left bottom / 100% 50% no-repeat;
+    padding-top:20rem;
+    margin-top:10rem;
+
+    @include respond(tab-port){
+        background:url('../images/gradientWave.svg') left top / 100% auto no-repeat,
+                linear-gradient($color-blue-two, $color-blue-two) left bottom / 100% 80% no-repeat;
+    }
+}
+
