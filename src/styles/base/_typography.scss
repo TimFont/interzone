@@ -1,5 +1,16 @@
 @font-face {
     font-family: "Montserrat";
+    src: url($fonts-path + 'light/Montserrat-Light.eot');
+    src: url($fonts-path + 'light/Montserrat-Light.eot#iefix') format('embedded-opentype'),
+         url($fonts-path + 'light/Montserrat-Light.woff2') format('woff2'),
+         url($fonts-path + 'light/Montserrat-Light.woff') format('woff'),
+         url($fonts-path + 'light/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
     src: url($fonts-path + 'regular/Montserrat-Regular.eot');
     src: url($fonts-path + 'regular/Montserrat-Regular.eot#iefix') format('embedded-opentype'),
          url($fonts-path + 'regular/Montserrat-Regular.woff2') format('woff2'),

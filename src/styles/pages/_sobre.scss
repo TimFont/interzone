@@ -1,0 +1,36 @@
+.desc-section,
+.mvv-section {
+    padding:0 5%;
+}
+
+.desc-section {
+    display:flex;
+    align-items: center;
+    padding-top:10rem;
+    padding-bottom:10rem;
+
+    &__left,
+    &__right {
+        flex:1;
+    }
+
+    &__left {
+        
+        text-align: center;
+    }
+
+    &__right {
+        
+    }
+
+    &__quote {
+        font-weight: 300;
+    }
+
+    &__presentation {
+        font-size:1.7rem;
+        line-height: 1.4;
+        color:$color-grey-three;
+
+    }
+}

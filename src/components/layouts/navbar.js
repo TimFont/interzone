@@ -9,8 +9,7 @@ export default class Navbar extends Component{
     render(){
         return(
             <Headroom disableInlineStyles>
-                <div className="navbar__container">
-                
+                <div className="navbar u-container-big">               
                     <Link to="/" className="navbar__logo" activeClassName="navbar__logo--home">
                         Interzone
                     </Link>

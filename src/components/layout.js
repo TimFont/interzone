@@ -58,14 +58,19 @@ export default class Layout extends Component {
         `}
         render={data => (
           <>
-           {this.state.isMobile ?
+           {
+             this.state.isMobile ?
 
               <Link to="/" className="mobile-logo">Interzone</Link> : ''
           
            }
-            {this.state.isMobile ? 
+
+            {
+              this.state.isMobile ? 
               <MobileNav /> :
-              <Navbar />}
+              <Navbar />
+              }
+
             <main>{this.props.children}</main>
             <Footer currentPage={this.props.location} />
           </>

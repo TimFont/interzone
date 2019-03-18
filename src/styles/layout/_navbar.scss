@@ -41,17 +41,12 @@
     transform: translateY(0%);
   }
 
-  .navbar {
+  .navbar { 
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &__container {
-      margin:0 auto;
-      width:90%;
-      height:100%;
-      display:flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
     &__logo {
       font-size:2rem;
       font-weight: 700;
