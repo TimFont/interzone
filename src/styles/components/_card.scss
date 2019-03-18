@@ -1,34 +1,26 @@
 .card {
-    flex:0 0 23%;
-    text-align:center;
+    margin:.5rem 0;
     background-color:$color-white;
-    padding:6rem 1.7rem 4rem 1.7rem;
-    border-radius: 15px;
-    box-shadow: $box-shadow;
-    transition:transform .5s;
-    margin:1rem .25em;;
+    box-shadow:$box-shadow;
+    padding:4rem;
 
-    &:hover {
-        transform: translateY(-1.5rem) ;
-    }
 
-    @include respond(tab-land){
-        flex:0 0 calc(33.33% - 1rem);
-    }
 
-    @include respond(tab-port){
-        flex:0 0 calc(50% - 1rem);
-    }
-
-    @include respond(phone){
-        //margin:1rem;
-        flex:0 0 90%;
+    &--feature {
+        transition:transform .5s;
+        padding-top:6rem;
+        text-align:center;
+        border-radius: 15px;
+        
 
         &:hover {
-            transform: none;
+            transform: translateY(-1.5rem) ;
         }
     }
 
+    &--job {
+
+    }
 
     &__icon {
         width:13rem;
@@ -42,31 +34,41 @@
         }
     }
 
-    &__icon-bg {
-        
-    }
-
     &__title {
-        font-size:1.7rem;
-        color:$color-grey-three;
-        margin-bottom:3.8rem;
-        position: relative;
+        &--feature {
+            font-size:1.7rem;
+            color:$color-grey-three;
+            margin-bottom:3.8rem;
+            position: relative;
 
-        &::after {
-            display:block;
-            content:"";
-            position: absolute;
-            background-color:$color-main-green;
-            width:5rem;
-            height:.3rem;
-            bottom:-1.8rem;
-            left:50%;
-            transform:translateX(-50%);
+    
+            &::after {
+                display:block;
+                content:"";
+                position: absolute;
+                background-color:$color-main-green;
+                width:5rem;
+                height:.3rem;
+                bottom:-1.8rem;
+                left:50%;
+                transform:translateX(-50%);
+            }
+
+        }
+
+        &--job {
+
         }
     }
 
     &__desc {
-        font-size:1.3rem;
-        color:lighten($color-grey-three, 8%);
+        &--feature {
+            font-size:1.3rem;
+            color:lighten($color-grey-three, 8%);
+        }
+
+        &--job {
+
+        }
     }
 }

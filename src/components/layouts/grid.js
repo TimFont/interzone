@@ -9,3 +9,13 @@ export default class Grid extends Component {
         );
     }
 }
+
+export class Column extends Component {
+    render(){
+        return(
+            <div className={`col-${this.props.column} ${this.props.additional ? this.props.additional : ''}`}>
+                {this.props.children}
+            </div>
+        );
+    }
+}

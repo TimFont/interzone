@@ -2,11 +2,36 @@
     display:flex;
     width:100%;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-wrap:wrap;
 
     @include respond(phone){
         justify-content: center;
     }
 
+}
+
+.col-one-of-two {
+    flex:$one-of-two;
+
+    @include respond(tab-port){
+        flex:$full;
+    }
+
+}
+
+.col-one-of-four {
+    flex:$one-of-four;
+
+    @include respond(tab-land){
+        flex:$one-of-three;
+    }
+
+    @include respond(tab-port){
+        flex:$one-of-two;
+    }
+
+    @include respond(phone){
+        flex:$full;
+    }
 }

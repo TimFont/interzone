@@ -20,7 +20,16 @@ $box-shadow-two: rgba(0, 0, 0, 0.4) 0px 6px 26px;
 $box-shadow-three:  0px 15px 26px 0px rgba(0,0,0,0.33);
 
 //margin / padding
-$mp-small:5rem;
-$mp-medium:10rem;
+$mp-small:8rem;
+$mp-medium:12rem;
 $mp-big:20rem;
+
+//grid
+
+$gap:1rem;
+$full:0 0 90%;
+$one-of-two:0 0 calc(50% - 1rem);
+$one-of-four:0 0 calc(25% - 1rem);
+$one-of-three:0 0 calc(33.33% - 1rem);
+
 

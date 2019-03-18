@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = ({ cardInfo }) => (
-    <div className="card">
+    <div className="card card--feature">
         <svg fill="none" className={`card__icon card__icon--${cardInfo.nameClass}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169 131">
             <path className={`card__icon-bg`} d={cardInfo.icon.bgPath} fill="#E1FFD2"></path>
             <path className={`card__icon-path`} fillRule="evenodd" clipRule="evenodd" d={cardInfo.icon.iconPath} fill={`url(#${cardInfo.nameClass}-linear)`}></path>
@@ -12,8 +12,8 @@ const Card = ({ cardInfo }) => (
                 </linearGradient>
             </defs>
         </svg>
-        <h3 className="card__title">{cardInfo.title}</h3>
-        <p className="card__desc">{cardInfo.content}</p>
+        <h3 className="card__title card__title--feature">{cardInfo.title}</h3>
+        <p className="card__desc card__desc--feature">{cardInfo.content}</p>
     </div>
 );
 

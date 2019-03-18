@@ -7,6 +7,14 @@
     margin-top:$mp-medium;
 }
 
+.u-mt-small {
+    margin-top:$mp-small;
+}
+
+.u-mb-small {
+    margin-bottom:$mp-small;
+}
+
 
 //Padding
 .u-container-big {
@@ -15,3 +23,21 @@
     margin-right:auto;
 }
 //flex positioning
+
+.flex {
+    display:flex;
+}
+
+.flex-j-end {
+    justify-content: flex-end;
+}
+
+//position
+
+.u-relative{
+    position:relative;
+}
+
+.u-absolute {
+    position:absolute;
+}
