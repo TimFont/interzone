@@ -20,6 +20,18 @@
 
 }
 
+.col-one-of-three {
+    flex:$one-of-three;
+
+    @include respond(tab-port){
+        flex:$one-of-two;
+    }
+
+    @include respond(phone){
+        flex:$full;
+    }
+}
+
 .col-one-of-four {
     flex:$one-of-four;
 

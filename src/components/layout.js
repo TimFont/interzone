@@ -1,12 +1,13 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql, Link } from "gatsby"
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 
-import Navbar from "../components/layouts/navbar"
-import MobileNav from "../components/layouts/mobileNav"
-import Footer from "./layouts/footer"
-import "../styles/main.scss"
+import Navbar from '../components/layouts/navbar';
+import Header from '../components/layouts/header';
+import MobileNav from '../components/layouts/mobileNav';
+import Footer from './layouts/footer';
+import '../styles/main.scss';
 
 
 
@@ -65,11 +66,13 @@ export default class Layout extends Component {
           
            }
 
+
             {
               this.state.isMobile ? 
               <MobileNav /> :
               <Navbar />
               }
+
 
             <main>{this.props.children}</main>
             <Footer currentPage={this.props.location} />

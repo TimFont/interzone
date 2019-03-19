@@ -22,6 +22,30 @@
 
     }
 
+    &--mvv {
+        border-radius: 15px;
+        padding:.6rem;
+        padding-bottom:2rem;
+    }
+
+    &__mvv-title-container {
+        height:10rem;
+        background:$linear-gradient-main;
+        display:flex;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px 15px 0 0;
+        color:$color-white;
+    }
+
+    &__mvv-desc {
+        margin:2.5rem 1rem 1rem 1rem;
+        color:$color-grey-three;
+        text-align:center;
+        font-size:1.5rem;
+    }
+
     &__icon {
         width:13rem;
         display:inline-block;

@@ -9,7 +9,7 @@
 
     &--adv {
         overflow: hidden;
-        background:url('../images/gradientDecor.svg') left top / auto 90vh no-repeat;
+        background:url('../images/bg/gradient-adv.svg') left top / auto 90vh no-repeat;
 
         @include respond(tab-land){
             background-size:auto 80%;
@@ -24,8 +24,8 @@
     height:100vh;
     width:100%;
 
-    background: url('../images/home-bg.svg')top / 100% 100% no-repeat,
-                url('../images/bg.png') right / cover no-repeat;
+    background: url('../images/bg/gradient-intro.svg')top / 100% 100% no-repeat,
+                url('../images/bg/bg-coding.png') right / cover no-repeat;
     position:relative;
     display:flex;
 
@@ -89,13 +89,13 @@
 }
 
 .contact-section {
-    background:url('../images/gradientWave.svg') left top / 100% auto no-repeat,
+    background:url('../images/bg/gradient-double.svg') left top / 100% auto no-repeat,
                 linear-gradient($color-blue-two, $color-blue-two) left bottom / 100% 50% no-repeat;
     padding-top:20rem;
     margin-top:10rem;
 
     @include respond(tab-port){
-        background:url('../images/gradientWave.svg') left top / 100% auto no-repeat,
+        background:url('../images/bg/gradient-double.svg') left top / 100% auto no-repeat,
                 linear-gradient($color-blue-two, $color-blue-two) left bottom / 100% 80% no-repeat;
     }
 }

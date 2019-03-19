@@ -11,5 +11,8 @@
         color:$color-white;
         margin-top:2rem;
         
+        @include respond(tab-port){
+            font-size:2rem;
+        }
     }
 }

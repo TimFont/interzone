@@ -1,0 +1,53 @@
+.job-box {
+    border-radius:15px;
+    background-image:url('../images/bg/bg-coding.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:18rem;
+    margin-bottom:1rem;
+    overflow: hidden;
+    box-shadow: $box-shadow-two;
+
+    &__link {
+        display:flex;
+        border-radius:15px;
+        width:100%;
+        height:100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity:0;
+        background:$linear-gradient-transparent;
+        transition:opacity .5s;
+
+        &:hover  {
+            opacity:1;
+        }
+
+        &:hover .job-box__title {
+            transform:translateY(0);
+        }
+
+        &:hover .job-box__desc {
+            transform:translateX(0);
+        }
+    }
+
+    &__title,
+    &__desc {
+        color:$color-white;
+    }
+
+    &__title {
+        transition:all .5s ease-in-out;
+        transform:translateY(20rem);
+        margin-bottom:1.5rem;
+
+    }
+
+    &__desc {
+        transform:translateX(40rem);
+        transition:all .5s ease-out .5s;
+    }
+}

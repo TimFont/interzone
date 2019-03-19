@@ -9,6 +9,10 @@
     padding-top:10rem;
     padding-bottom:10rem;
 
+    @include respond(tab-port){
+        flex-direction: column;
+    }
+
     &__left,
     &__right {
         flex:1;
@@ -17,6 +21,10 @@
     &__left {
         
         text-align: center;
+
+        @include respond(tab-port){
+            margin-bottom:3rem;
+        }
     }
 
     &__right {
@@ -33,4 +41,11 @@
         color:$color-grey-three;
 
     }
+}
+
+.mvv-section {
+    padding-top:15rem;
+    padding-bottom:15rem;
+    background:url('../images/bg/grey-wave.svg') top left / cover no-repeat;
+    margin-top:5rem;
 }

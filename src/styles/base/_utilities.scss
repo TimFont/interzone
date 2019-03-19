@@ -1,10 +1,14 @@
 //Margins
 .u-mt-medium {
+    margin-top:$mp-small;
+}
+
+.u-mt-medium {
     margin-top:$mp-medium;
 }
 
 .u-mb-medium {
-    margin-top:$mp-medium;
+    margin-bottom:$mp-medium;
 }
 
 .u-mt-small {
