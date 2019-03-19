@@ -57,7 +57,7 @@
         padding-left:6rem;
 
         @include respond(tab-port){
-            padding-left:none;
+            padding-left:0;
         }
     }
 

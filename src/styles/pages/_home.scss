@@ -96,7 +96,7 @@
 
     @include respond(tab-port){
         background:url('../images/bg/gradient-double.svg') left top / 100% auto no-repeat,
-                linear-gradient($color-blue-two, $color-blue-two) left bottom / 100% 80% no-repeat;
+                linear-gradient($color-blue-two, $color-blue-two) left bottom / 100% 90% no-repeat;
     }
 }
 
