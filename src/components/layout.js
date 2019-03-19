@@ -24,17 +24,23 @@ export default class Layout extends Component {
   }
 
   componentWillMount(){
-    if(window.innerWidth <= 600){
-      this.setState({ isMobile: true })
+    if(typeof window !== 'undefined'){
+      if(window.innerWidth <= 600){
+        this.setState({ isMobile: true })
+      }
     }
   }
 
   componentDidMount(){
-    window.addEventListener('resize', this.resizeEvt);
+    if(typeof window !== 'undefined'){
+      window.addEventListener('resize', this.resizeEvt);
+    }
   }
 
   componentWillUnmount(){
+   if(typeof window !== 'undefined'){
     window.removeEventListener('resize', this.resizeEvt);
+   }
   }
 
   resizeEvt(){
