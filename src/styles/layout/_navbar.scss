@@ -6,6 +6,10 @@
     background-color:transparent;
     padding: 2rem 0;
     transition: all  .8s ease-in-out;
+
+    @include respond(phone){
+      display:none;
+    }
   }
 
   .headroom-wrapper{

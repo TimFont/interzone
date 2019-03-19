@@ -7,6 +7,11 @@
     background-image: linear-gradient(to bottom, #ffffff, #fafafa, #f6f6f6, #f1f1f1, #ededed);
     border-top: .5px solid $color-grey-two;
     z-index:1000;
+    display:none;
+
+    @include respond(phone){
+        display:block;
+    }
 
     &__list {
         display:flex;

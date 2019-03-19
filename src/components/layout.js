@@ -73,11 +73,8 @@ export default class Layout extends Component {
            }
 
 
-            {
-              this.state.isMobile ? 
-              <MobileNav /> :
-              <Navbar />
-              }
+            <MobileNav />
+            <Navbar />
 
 
             <main>{this.props.children}</main>
