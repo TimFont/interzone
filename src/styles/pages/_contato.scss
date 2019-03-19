@@ -1,0 +1,7 @@
+.contato{
+    &__container {
+        padding:8rem 0;
+        background: linear-gradient(rgba($color-blue-two, .7), rgba($color-blue-two, .7)),
+        url('../images/bg/bg-coding.png') top left / cover no-repeat;
+    }
+}
